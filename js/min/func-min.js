@@ -1,1 +1,1 @@
-function init(){var n=document.getElementById("code").innerHTML,e=0,o="<span class='something'>"+n[1]+"</span>",t=n.replace(n[1],o);document.getElementById("code").innerHTML=t,console.log(n)}window.onload=init;
+function init(){for(var n=document.getElementById("code").innerHTML,e=0,o=[],t="<span class='something'>"+n[1]+"</span>",s=0;s<=n.length;s++)"%"===n[s]?o.push("<span class='something'>"+n[1]+"</span>"):o.push(n[s]);document.getElementById("code").innerHTML="";for(var d=0;d<=o.length;d++)document.getElementById("code").innerHTML+=o[d];console.log(o)}window.onload=init;
