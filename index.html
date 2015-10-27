@@ -5,10 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-	<title>Bootstrap 101 Template</title>
+	<title>Meyer Sound | ExactTarget Instructions</title>
 
 	<!-- Bootstrap -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,9 +19,24 @@
 	<![endif]-->
 </head>
 <body>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-12 instructions">
+			<div class="group">
+				<h2>Exact Target</h2>
+				<div class="inst-para">
+					<p id="code">%%[if FromName == "005i0000002t84PAAQ" then]%% %%= Trim("Erick Tapia") =%% %%[elseif FromName == "005i0000002t80aAAA" then]%% %%= Trim("Franck Fabry") =%% %%[elseif FromName == "005i0000002t80ZAAQ" then]%% %%= Trim("Juan Carlos Yepes") =%% %%[elseif FromName == "005i0000002t84yAAA" then]%% %%= Trim("Rick Coleman") =%% %%[elseif FromName == "005i0000002t84LAAQ" then]%% %%= Trim("Sandy Macdonald") =%% %%[elseif FromName == "005i0000002t84tAAA" then]%% %%= Trim("Scott Taylor") =%% %%[elseif FromName == "005i0000002t80cAAA" then]%% %%= Trim("Will Lewis") =%% %%[else]%% Default %%[endif]%%</p>
+				</div>
+			</div>
+		</div>
+		<div class="col-sm-12 col-md-12 background">
+			<div class="back-black"></div>
+			<img src="img/mc_bg.jpg" class="img-responsive" alt="ExactTarget Background">
+		</div>
+	</div>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/func.js"></script>
 </body>
 </html>

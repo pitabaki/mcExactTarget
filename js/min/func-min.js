@@ -1,0 +1,1 @@
+function init(){var n=document.getElementById("code").innerHTML,e=0,o="<span class='something'>"+n[1]+"</span>",t=n.replace(n[1],o);document.getElementById("code").innerHTML=t,console.log(n)}window.onload=init;
