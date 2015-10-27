@@ -43,7 +43,11 @@ h6
 	+absoluteZero
 	padding: 20px
 	+border-radius(10px)
-	+borderShadow(0px 5px 10px $trueBlack)
+	+borderShadow(0px 5px 10px rgba(0,0,0,0.5))
+	transition: all 0.5s ease
+
+.group:hover
+	+borderShadow(0px 5px 15px rgba(0,0,0,0.75))
 
 .instructions p,
 .instructions h1,

@@ -9,7 +9,7 @@ function init(){
 		howMany = 0,
 		empty = [],
 		spanClass = "<span class='perc'>" + code[1] + "</span>";
-	for(var i = 0; i<= code.length; i++){
+	for(var i = 0; i< code.length; i++){
 		if(code[i] === "%"){
 			empty.push(spanClass);
 		}else{
@@ -17,7 +17,7 @@ function init(){
 		}
 	}
 	document.getElementById("code").innerHTML = "";
-	for(var g = 0; g<=empty.length; g++){
+	for(var g = 0; g<code.length; g++){
 		document.getElementById("code").innerHTML += empty[g];
 	}
 	console.log(empty);
