@@ -21,7 +21,7 @@ h6 {
 
 .group {
   width: 80%;
-  background-color: #222222;
+  background-color: #558ac8;
   margin: 0 auto;
   padding: 0;
   padding: 20px;
@@ -39,13 +39,13 @@ h6 {
 .instructions h4,
 .instructions h5,
 .instructions h6 {
-  color: #558ac8;
+  color: #000000;
   margin: 0 auto;
   padding: 0;
   text-align: center; }
 
 .inst-para {
-  background-color: #eeeded;
+  background-color: #000000;
   margin: 20px;
   padding: 20px;
   border-radius: 10px;
@@ -55,9 +55,12 @@ h6 {
   -webkit-box-shadow: 0px 2px 5px #000000;
   -moz-box-shadow: 0px 2px 5px #000000; }
 
+.instructions h2 {
+  padding-top: 10px; }
+
 .inst-para p {
   text-align: left;
-  color: #222222; }
+  color: #eeeded; }
 
 .background {
   overflow: hidden;
@@ -75,5 +78,8 @@ h6 {
   height: 100%;
   z-index: 1; }
 
-.something {
-  color: red; }
+.perc {
+  color: #f4d422; }
+
+.func {
+  color: #9d053b; }

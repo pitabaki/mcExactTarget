@@ -11,6 +11,7 @@ $typeWhite: #eeeded
 $rich_grey: #222222
 $ms_blue: #558ac8
 $ms_yellow: #f4d422
+$ms_crimson: #9d053b
 $trueBlack: #000000
 
 @import "mixins"
@@ -30,7 +31,7 @@ h4,
 h5,
 h6
 	font-family: $typeface
-	
+
 .instructions
 	position: absolute
 	top: 10%
@@ -38,7 +39,7 @@ h6
 
 .group
 	width: 80%
-	background-color: $rich_grey
+	background-color: $ms_blue
 	+absoluteZero
 	padding: 20px
 	+border-radius(10px)
@@ -51,20 +52,23 @@ h6
 .instructions h4,
 .instructions h5,
 .instructions h6
-	color: $ms_blue
+	color: $trueBlack
 	+absoluteZero
 	text-align: center
 
 .inst-para
-	background-color: $typeWhite
+	background-color: $trueBlack
 	margin: 20px
 	padding: 20px
 	+border-radius(10px)
 	+borderShadow(0px 2px 5px $trueBlack)
 
+.instructions h2
+	padding-top: 10px
+
 .inst-para p
 	text-align: left
-	color: $rich_grey
+	color: $typeWhite
 
 .background
 	overflow: hidden
@@ -78,5 +82,9 @@ h6
 	opacity: 0.6
 	+perfectSquare(100%)
 	z-index: 1
-.something
-	color: red
+
+.perc
+	color: $ms_yellow
+
+.func
+	color: $ms_crimson
