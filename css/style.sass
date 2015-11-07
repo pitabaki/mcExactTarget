@@ -12,6 +12,12 @@ $rich_grey: #222222
 $ms_blue: #558ac8
 $ms_yellow: #f4d422
 $ms_crimson: #9d053b
+$ms_black: #231f20
+$ms_lime: #9b8910
+$ms_offWhite: #e0dccd
+$ms_ltGrey: #d5d5d2
+//$ms_yellow: #ddcd89
+$ms_orange: #fdb924
 $trueBlack: #000000
 
 @import "mixins"
@@ -31,6 +37,7 @@ h4,
 h5,
 h6
 	font-family: $typeface
+	font-weight: lighter
 
 .instructions
 	position: absolute
@@ -56,23 +63,23 @@ h6
 .instructions h4,
 .instructions h5,
 .instructions h6
-	color: $trueBlack
+	color: $ms_black
 	+absoluteZero
 	text-align: center
 
 .inst-para
-	background-color: $trueBlack
+	background-color: #282828
 	margin: 20px
 	padding: 20px
 	+border-radius(10px)
-	+borderShadow(0px 2px 5px $trueBlack)
+	border: 2px solid $trueBlack
 
 .instructions h2
 	padding-top: 10px
 
 .inst-para p
 	text-align: left
-	color: $typeWhite
+	color: $ms_offWhite
 
 .background
 	overflow: hidden
