@@ -18,13 +18,15 @@ var func = {
 	},// END SINGLEOPER
 	multiOper: function(chars,blank,ref,sngCl,dblCl){
 		'use strict';
+		function rest(word, res){
+			res += word + "</span>";
+			return res;
+		}
 		//Modify passed variables
-		var longWord = chars[2].length - 1,
-			trpCl = dblCl;
-		trpCl += chars[2] + "</span>";
-		dblCl += chars[1] + "</span>";
+		var sixChars = chars[2].length - 1,
+			fiveChars = chars[3].length - 1,
+			fourChars = chars[4].length - 1;
 		sngCl += chars[0] + "</span>";
-		console.log("longword is " + longWord);
 		//Loop through returned HTML and apply <span> class
 		for(var i = 0; i < ref.length; i++){
 			var g = i + 1,
@@ -32,11 +34,14 @@ var func = {
 				j = i + 3,
 				m = i + 4;
 			if((ref[i] === chars[1][0]) && (ref[g] === chars[1][1])){
-				blank.push(dblCl);
+				blank.push(rest(chars[1],dblCl));
 				i = i + 1;
 			}else if((ref[i] === chars[2][0]) && (ref[g] === chars[2][1]) && (ref[h] === chars[2][2]) && (ref[j] === chars[2][3]) && (ref[m] === chars[2][4])){
-				blank.push(trpCl);
-				i = i + longWord;
+				blank.push(rest(chars[2],dblCl));
+				i = i + sixChars;
+			}else if((ref[i] === chars[3][0]) && (ref[h] === chars[3][2])){
+				blank.push(rest(chars[3],dblCl));
+				i = i + fiveChars;
 			}else if(ref[i] === chars[0][0]){
 				blank.push(sngCl);
 			}else{
@@ -56,10 +61,10 @@ function init(){
 	var code = document.getElementById("code").innerHTML,
 		howMany = 0,
 		Many = 0,
-		identifiers = ["%", "if", "elseif"],
+		identifiers = ["%","if","elseif","endif","else"],
 		empty = [],
-		ifClass = "<span class='if-else'>",
-		percClass = "<span class='perc'>";
+		restClass = "<span class='if-else'>",
+		symClass = "<span class='perc'>";
 	console.log(code);
 
 	/*for(var z = 0; z < code.length; i++){
@@ -68,7 +73,7 @@ function init(){
 
 	//func.singleOper('%',empty,code,percClass);
 	//call function for multiple operators
-	func.multiOper(identifiers,empty,code,percClass,ifClass);
+	func.multiOper(identifiers,empty,code,symClass,restClass);
 	document.getElementById("code").innerHTML = "";
 	for(var g = 0; g<code.length; g++){
 		if(typeof empty[g] !== "undefined"){
