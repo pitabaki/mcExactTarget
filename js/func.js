@@ -27,7 +27,6 @@ var func = {
 
 		//modify symantic class (class for single elements)
 		sngCl += chars[0] + "</span>";
-
 		//variables for word lengths. Add to i in for loop.
 		var sixChars = chars[2].length - 1,
 			fiveChars = chars[3].length - 1,
@@ -39,7 +38,6 @@ var func = {
 			//Variables used to check for matched characters at index number indicated below.
 			var g = i + 1,
 				h = i + 2,
-				j = i + 3,
 				m = i + 5;
 			if((ref[i] === chars[1][0]) && (ref[g] === chars[1][1])){
 				blank.push(rest(chars[1],dblCl));
@@ -52,6 +50,9 @@ var func = {
 				i = i + fiveChars;
 			}else if((ref[i] === chars[4][0]) && (ref[h] === chars[4][2])){
 				blank.push(rest(chars[4],dblCl));
+				i = i + fourChars;
+			}else if((ref[i] === chars[5][0]) && (ref[h] === chars[5][2])){
+				blank.push(rest(chars[5],dblCl));
 				i = i + fourChars;
 			}else if(ref[i] === chars[0][0]){
 				blank.push(sngCl);
@@ -70,13 +71,10 @@ function init(){
 	//Define all initial variables
 	//identifiers = all words you'd like to query
 	var code = document.getElementById("code").innerHTML,
-		howMany = 0,
-		Many = 0,
-		identifiers = ["%","if","elseif","endif","else"],
+		syntax = ["%","if","elseif","endif","else","then"],
 		empty = [],
 		restClass = "<span class='if-else'>",
 		symClass = "<span class='perc'>";
-	console.log(code);
 
 	/*for(var z = 0; z < code.length; i++){
 
@@ -84,16 +82,13 @@ function init(){
 
 	//func.singleOper('%',empty,code,percClass);
 	//call function for multiple operators
-	func.multiOper(identifiers,empty,code,symClass,restClass);
+	func.multiOper(syntax,empty,code,symClass,restClass);
 	document.getElementById("code").innerHTML = "";
 	for(var g = 0; g<code.length; g++){
 		if(typeof empty[g] !== "undefined"){
 			document.getElementById("code").innerHTML += empty[g];
 		}
 	}
-	console.log(document.getElementById("code").innerHTML);
-	console.log(empty);
-	console.log(Many);
 	return false;
 }
 window.onload = init;

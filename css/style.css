@@ -1,6 +1,290 @@
+.perc {
+  color: #f4d422; }
+
+.func {
+  color: #c83167; }
+
+.if-else {
+  color: #558ac8; }
+
+.ms-nav .container {
+  height: 100px; }
+
+.ms-nav {
+  margin: 0 auto;
+  background-color: #222222;
+  border: 0; }
+
+.navbar-brand {
+  margin: 0 auto; }
+
+.navbar-title {
+  font-size: 16px;
+  line-height: 22px;
+  display: block;
+  margin-top: 60px; }
+
+.navbar-right {
+  margin-right: 0; }
+
+#ms-brand a {
+  font-size: 20px;
+  color: #558ac8;
+  transition: all 0.5s ease; }
+
+#ms-brand a:hover {
+  text-decoration: none;
+  color: #19549a; }
+
+.instructions {
+  top: 10%;
+  z-index: 20; }
+
+.instructions p,
+.instructions h1,
+.instructions h2,
+.instructions h3,
+.instructions h4,
+.instructions h5,
+.instructions h6 {
+  color: #231f20;
+  margin: 0 auto;
+  padding: 0;
+  text-align: left; }
+
+.instructions h2 {
+  padding-top: 10px; }
+
+.instructions {
+  margin-top: 6%;
+  padding: 1.5em 5em 3em;
+  background-color: #ffffff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px; }
+
+.instructions li {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  color: #231f20; }
+
+.instructions h4 {
+  padding-top: 10px; }
+
+.instructions ol {
+  margin: 0 auto;
+  padding: 0;
+  margin-left: 30px; }
+
+.instructions ul,
+.instructions ol {
+  margin: 0 auto;
+  padding: 0;
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #d5d5d2; }
+
+.instructions li {
+  margin: 0 auto;
+  padding: 0;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 21px;
+  list-style-type: lower-alpha;
+  width: 90%; }
+
+.list h1 {
+  margin: 0 auto; }
+
+.list h1,
+.list h3 {
+  padding: 20px 0 10px; }
+
+body {
+  background-color: #d5d5d2; }
+
+label,
+legend,
+input,
+form,
+fieldset,
+select,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  font-weight: lighter;
+  font-size: 14px; }
+
+ul,
+ol {
+  padding: 20px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border: 1px solid #d5d5d2; }
+
+li {
+  list-style: none;
+  padding: 7px;
+  font-size: 14px;
+  line-height: 21px; }
+
+h1 {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: normal;
+  color: black;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0; }
+
+h2 {
+  padding: 40px 0 10px;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  line-height: 27px;
+  font-weight: normal;
+  color: #558ac8;
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-bottom: 1px solid #558ac8; }
+
+h3 {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: bold;
+  color: #222222; }
+
+h4 {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: bold;
+  color: #222222; }
+
+p {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  color: #222222; }
+
+a {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  font-weight: normal;
+  color: #e88b46;
+  text-decoration: none;
+  transition: color 0.5s ease; }
+
+a:hover {
+  color: #b71849;
+  text-decoration: none; }
+
+header {
+  text-align: left;
+  position: relative;
+  margin-top: 40px;
+  color: #558ac8;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px; }
+
+.instructions header h1 {
+  color: #558ac8;
+  border-bottom: 1px solid #558ac8; }
+
+select {
+  display: block; }
+
+label {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 10px; }
+
+input {
+  border: 1px solid #d5d5d2;
+  display: block;
+  margin: 6px 0 6px 0;
+  padding: 4px;
+  width: 100%; }
+
+fieldset {
+  padding: 1.5em 2em 1.5em;
+  border: 1px solid #d5d5d2;
+  background-color: #eeeded; }
+
+legend {
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  text-align: center;
+  line-height: 23px;
+  width: 40%;
+  border: 0; }
+
+form {
+  width: 100%;
+  margin-top: 10%; }
+
+button input {
+  font-size: 14px;
+  line-height: 19px;
+  vertical-align: middle; }
+
+ol li {
+  font-size: 16px;
+  line-height: 22px; }
+  ol li ul {
+    list-style: none;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0;
+    padding: 20px 30px;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    background-color: #eeeded; }
+    ol li ul li {
+      display: block;
+      font-size: 14px;
+      line-height: 17px;
+      padding: 0 10px;
+      margin: 4px auto; }
+
+@media screen and (max-width: 767px) {
+  form {
+    width: 100%; } }
+.LINKS {
+  background-color: #eeeeee; }
+
+.LINKS ol {
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 10px;
+  border: 0; }
+  .LINKS ol li {
+    padding: 0;
+    list-style-type: upper-roman;
+    width: 95%; }
+
+body {
+  background-color: #d5d5d2; }
+
 img {
   display: block;
-  position: absolute;
   z-index: 0;
   max-width: none;
   width: 100%; }
@@ -12,13 +296,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif;
+  font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
   font-weight: lighter; }
-
-.instructions {
-  position: absolute;
-  top: 10%;
-  z-index: 20000; }
 
 .group {
   width: 80%;
@@ -39,18 +318,6 @@ h6 {
   -webkit-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.75); }
 
-.instructions p,
-.instructions h1,
-.instructions h2,
-.instructions h3,
-.instructions h4,
-.instructions h5,
-.instructions h6 {
-  color: #231f20;
-  margin: 0 auto;
-  padding: 0;
-  text-align: center; }
-
 .inst-para {
   background-color: #282828;
   margin: 20px;
@@ -60,8 +327,8 @@ h6 {
   -moz-border-radius: 10px;
   border: 2px solid #000000; }
 
-.instructions h2 {
-  padding-top: 10px; }
+.group h2 {
+  text-align: center; }
 
 .inst-para p {
   text-align: left;
@@ -83,11 +350,10 @@ h6 {
   height: 100%;
   z-index: 1; }
 
-.perc {
-  color: #f4d422; }
+@media screen and (max-width: 767px) {
+  .navbar-nav {
+    float: right; }
 
-.func {
-  color: #9d053b; }
-
-.if-else {
-  color: #9d053b; }
+  .navbar-title {
+    margin-top: 0;
+    display: none; } }

@@ -3,28 +3,17 @@
 
 //Built with Bootstrap in mind
 
-//Typography
-$typeface: "HelveticaNeue-Light", "HelveticaNeue", Helvetica, Arial, sans-serif
-
-//MS Colors
-$typeWhite: #eeeded
-$rich_grey: #222222
-$ms_blue: #558ac8
-$ms_yellow: #f4d422
-$ms_crimson: #9d053b
-$ms_black: #231f20
-$ms_lime: #9b8910
-$ms_offWhite: #e0dccd
-$ms_ltGrey: #d5d5d2
-//$ms_yellow: #ddcd89
-$ms_orange: #fdb924
-$trueBlack: #000000
-
+@import "variables"
 @import "mixins"
+@import "nav"
+@import "instructions"
+@import "defaults"
+@import "links"
 
+body
+	background-color: $ms_ltGrey
 img
 	display: block
-	position: absolute
 	z-index: 0
 	max-width: none
 	width: 100%
@@ -39,43 +28,27 @@ h6
 	font-family: $typeface
 	font-weight: lighter
 
-.instructions
-	position: absolute
-	top: 10%
-	z-index: 20000
-
 .group
 	width: 80%
 	background-color: $ms_blue
 	+absoluteZero
 	padding: 20px
-	+border-radius(10px)
-	+borderShadow(0px 5px 10px rgba(0,0,0,0.5))
+	+borderRadius(10px)
+	+boxShadow(0px 5px 10px rgba(0,0,0,0.5))
 	transition: all 0.5s ease
 
 .group:hover
-	+borderShadow(0px 5px 15px rgba(0,0,0,0.75))
-
-.instructions p,
-.instructions h1,
-.instructions h2,
-.instructions h3,
-.instructions h4,
-.instructions h5,
-.instructions h6
-	color: $ms_black
-	+absoluteZero
-	text-align: center
+	+boxShadow(0px 5px 15px rgba(0,0,0,0.75))
 
 .inst-para
 	background-color: #282828
 	margin: 20px
 	padding: 20px
-	+border-radius(10px)
+	+borderRadius(10px)
 	border: 2px solid $trueBlack
 
-.instructions h2
-	padding-top: 10px
+.group h2
+	text-align: center
 
 .inst-para p
 	text-align: left
@@ -94,11 +67,10 @@ h6
 	+perfectSquare(100%)
 	z-index: 1
 
-.perc
-	color: $ms_yellow
+@media screen and (max-width: 767px)
+	.navbar-nav
+		float: right
 
-.func
-	color: $ms_crimson
-
-.if-else
-	color: $ms_crimson
+	.navbar-title
+		margin-top: 0
+		display: none

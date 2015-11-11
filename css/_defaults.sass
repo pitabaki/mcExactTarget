@@ -1,0 +1,131 @@
+body
+	background-color: $ms_ltGrey
+
+label,
+legend,
+input,
+form,
+fieldset,
+select,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+	font-family: $typeface
+	+borderRadius(4px)
+	font-weight: lighter
+	font-size: 14px
+ul,
+ol
+	padding: 20px
+	+borderRadius(5px)
+	border: $borderStyle
+
+li
+	list-style: none
+	padding: 7px
+	font-size: 14px
+	line-height: 21px
+
+h1
+	+typeTreatment($typeface,24px,27px,normal,black)
+	+borderRadius(0)
+
+h2
+	padding: 40px 0 10px
+	+typeTreatment($typeface,24px,27px,normal,$ms_blue)
+	+borderRadius(0)
+	border-bottom: 1px solid $ms_blue
+
+h3
+	+typeTreatment($typeface,20px,25px,bold,$rich_grey)
+
+h4
+	+typeTreatment($typeface,16px,22px,bold,$rich_grey)
+
+p
+	+typeTreatment($typeface,14px,19px,normal,$rich_grey)
+
+a
+	+typeTreatment($typeface,14px,19px,normal,$ms_orange)
+	text-decoration: none
+	transition: color 0.5s ease
+
+a:hover
+	color: $ms_orangeShade
+	text-decoration: none
+
+header
+	text-align: left
+	position: relative
+	margin-top: 40px
+	color: $ms_blue
+	+borderRadius(8px)
+
+.instructions header h1
+	color: $ms_blue
+	border-bottom: 1px solid $ms_blue
+
+select
+	display: block
+
+label
+	+absoluteZero
+	margin-top: 10px
+
+input
+	border: $borderStyle
+	display: block
+	margin: 6px 0 6px 0
+	padding: 4px
+	width: 100%
+
+fieldset
+	padding: 1.5em 2em 1.5em
+	border: $borderStyle
+	background-color: $typeWhite
+
+legend
+	font-family: $typeface
+	font-size: 18px
+	text-align: center
+	line-height: 23px
+	width: 40%
+	border: 0
+
+form
+	width: 100%
+	margin-top: 10%
+
+button input
+	font-size: 14px
+	line-height: 19px
+	vertical-align: middle
+
+ol
+	li
+		font-size: 16px
+		line-height: 22px
+		ul
+			list-style: none
+			width: 100%
+			margin: 20px auto
+			padding: 0
+			padding: 20px 30px
+			+borderRadius(8px)
+			background-color: $typeWhite
+			li
+				display: block
+				font-size: 14px
+				line-height: 17px
+				padding: 0 10px
+				margin: 4px auto
+
+
+@media screen and (max-width: 767px)
+
+	form
+		width: 100%
